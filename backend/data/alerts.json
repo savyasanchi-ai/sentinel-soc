@@ -1,0 +1,62 @@
+[
+    {
+      "alert_id": "ALT-1001",
+      "timestamp": "2026-09-12T13:45:00Z",
+      "source_ip": "194.26.29.112",
+      "dest_ip": "10.0.4.12",
+      "target_host": "DC-PROD-01",
+      "user": "svc_backup",
+      "event_type": "Failed Authentication Spike (x480)",
+      "raw_severity": "HIGH",
+      "asset_criticality": "TIER_1_CROWN_JEWEL",
+      "description": "High volume of Kerberos pre-authentication failures targeting domain controller."
+    },
+    {
+      "alert_id": "ALT-1002",
+      "timestamp": "2026-09-12T13:48:12Z",
+      "source_ip": "194.26.29.112",
+      "dest_ip": "10.0.4.12",
+      "target_host": "DC-PROD-01",
+      "user": "svc_backup",
+      "event_type": "Successful Logon After Multiple Failures",
+      "raw_severity": "CRITICAL",
+      "asset_criticality": "TIER_1_CROWN_JEWEL",
+      "description": "Logon type 3 from foreign IP following massive authentication failures."
+    },
+    {
+      "alert_id": "ALT-1003",
+      "timestamp": "2026-09-12T13:51:04Z",
+      "source_ip": "10.0.4.12",
+      "dest_ip": "10.0.8.50",
+      "target_host": "DB-CUSTOMER-SQL",
+      "user": "svc_backup",
+      "event_type": "PowerShell Encoded Command Executed",
+      "raw_severity": "HIGH",
+      "asset_criticality": "TIER_1_CROWN_JEWEL",
+      "description": "PowerShell -EncodedCommand dumping active database connection strings and SAM registry hives."
+    },
+    {
+      "alert_id": "ALT-1004",
+      "timestamp": "2026-09-12T13:55:20Z",
+      "source_ip": "10.0.8.50",
+      "dest_ip": "85.204.11.8",
+      "target_host": "DB-CUSTOMER-SQL",
+      "user": "svc_backup",
+      "event_type": "Anomalous Outbound Data Volume (4.2 GB)",
+      "raw_severity": "CRITICAL",
+      "asset_criticality": "TIER_1_CROWN_JEWEL",
+      "description": "Unencrypted outbound egress over port 443 to known malicious drop-server."
+    },
+    {
+      "alert_id": "ALT-1005",
+      "timestamp": "2026-09-12T13:58:00Z",
+      "source_ip": "10.0.99.14",
+      "dest_ip": "10.0.99.2",
+      "target_host": "DEV-TEST-VM",
+      "user": "intern_dev",
+      "event_type": "Port Scan Detected",
+      "raw_severity": "LOW",
+      "asset_criticality": "TIER_3_DEV",
+      "description": "Nmap scan initiated during local integration testing."
+    }
+  ]
